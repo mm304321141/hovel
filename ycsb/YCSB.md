@@ -32,7 +32,7 @@
 
 ### 3.写性能与压缩率
 由于压缩率与机器的内存无关，以下各种内存情况下的压缩率均为：
-![write.svg](https://raw.githubusercontent.com/mm304321141/hovel/master/ycsb/write.svg)
+![write.svg](https://cdn.rawgit.com/mm304321141/hovel/master/ycsb/write.svg)
 
 
 ### 4.读性能
@@ -44,13 +44,13 @@
 - Wiredtiger 使用文件IO接口读取文件，cgroups 无法限制系统缓存，所以使用内核参数限制内存，此时测试客户端运行在内网其它服务器
 
 #### 4.1.数据远小于内存（内存64GB）
-![read.svg](https://raw.githubusercontent.com/mm304321141/hovel/master/ycsb/read.svg)
+![read.svg](https://cdn.rawgit.com/mm304321141/hovel/master/ycsb/read.svg)
 
 #### 4.2.数据略小于内存（内存8GB）
-![mem8_read.svg](https://raw.githubusercontent.com/mm304321141/hovel/master/ycsb/mem8_read.svg)
+![mem8_read.svg](https://cdn.rawgit.com/mm304321141/hovel/master/ycsb/mem8_read.svg)
 
 #### 4.3.数据略大于内存（内存4GB）
-![mem4_read.svg](https://raw.githubusercontent.com/mm304321141/hovel/master/ycsb/mem4_read.svg)
+![mem4_read.svg](https://cdn.rawgit.com/mm304321141/hovel/master/ycsb/mem4_read.svg)
 
 #### 4.4.数据大于内存（内存2GB）
-![mem2_read.svg](https://raw.githubusercontent.com/mm304321141/hovel/master/ycsb/mem2_read.svg)
+![mem2_read.svg](https://cdn.rawgit.com/mm304321141/hovel/master/ycsb/mem2_read.svg)
