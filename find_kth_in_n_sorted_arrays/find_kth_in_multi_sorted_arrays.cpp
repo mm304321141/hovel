@@ -77,7 +77,7 @@ struct finder_t
         std::swap(m, e);
       }
     }
-    std::sort(pos.begin(), pos.end(), [b](pos_info const &x, pos_info const &y)
+    std::nth_element(pos.begin(), pos.begin() + find, pos.end(), [b](pos_info const &x, pos_info const &y)
     {
       return (*x.arr)[x.p[b]] < (*y.arr)[y.p[b]];
     });
@@ -124,4 +124,3 @@ int main()
   }
   system("pause");
 }
-
